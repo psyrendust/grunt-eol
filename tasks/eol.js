@@ -40,12 +40,14 @@ module.exports = function(grunt) {
           return true;
         }
       }).forEach(function(filepath) {
-        var file = grunt.file.read(filepath);
-        file = file.replace(/\r\n|\n|\r/g, eol);
-        // Write the destination file.
-        grunt.log.write('Creating file '.cyan + f.dest + '...');
-        grunt.file.write(f.dest, file);
-        grunt.log.ok();
+        if (grunt.file.isFile(filepath)) {
+          var file = grunt.file.read(filepath);
+          file = file.replace(/\r\n|\n|\r/g, eol);
+          // Write the destination file.
+          grunt.log.write('Creating file '.cyan + f.dest + '...');
+          grunt.file.write(f.dest, file);
+          grunt.log.ok();
+        }
       });
     });
 
