@@ -11,7 +11,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 npm install grunt-eol --save-dev
 ```
 
-One the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
 grunt.loadNpmTasks('grunt-eol');
@@ -37,48 +37,75 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.eol
 Type: `String`
-Default value: `',  '`
+Default value: `'lf'`
 
-A string value that is used to do something with whatever.
+The line ending you would like to convert to.
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+#### options.replace
+Type: `Boolean`
+Default value: `false`
 
-A string value that is used to do something else with whatever else.
+If `true` replace the source file.
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, the default options are used to convert the files to `lf` line endings.
 
 ```js
 grunt.initConfig({
   eol: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    default_options: {
+      files: {
+        'tmp/default_options': ['test/fixtures/crlf']
+      }
+    }
+  }
 })
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In this example, custom options are used to convert all files to `crlf`.
 
 ```js
 grunt.initConfig({
   eol: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    to_crlf_all: {
+      options: {
+        eol: 'crlf'
+      },
+      files: [{
+        expand: true,
+        cwd: 'test/fixtures/',
+        src: ['*'],
+        dest: 'tmp/to_crlf_all/'
+      }]
+    }
+  }
+})
+```
+
+In this example, custom options are used to convert all files to `crlf` with inline file replacement.
+
+```js
+grunt.initConfig({
+  eol: {
+    to_crlf_replace: {
+      options: {
+        eol: 'crlf',
+        replace: true
+      },
+      files: {
+        src: [
+          './tmp/to_crlf_replace/cr',
+          './tmp/to_crlf_replace/crlf',
+          './tmp/to_crlf_replace/lf'
+        ]
+      }
+    }
+  }
 })
 ```
 
