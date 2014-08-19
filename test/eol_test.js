@@ -69,5 +69,14 @@ exports.test = {
     test.equal(grunt.file.read(dir + '/lf'), expected, 'lf -> crlf');
     test.equal(grunt.file.read(dir + '/crlf'), expected, 'crlf -> crlf');
     test.done();
+  },
+  to_crlf_replace: function (test) {
+    test.expect(3);
+    var expected = grunt.file.read('test/expected/crlf');
+    var dir = 'tmp/to_crlf_replace';
+    test.equal(grunt.file.read(dir + '/cr'), expected, 'cr -> crlf');
+    test.equal(grunt.file.read(dir + '/lf'), expected, 'lf -> crlf');
+    test.equal(grunt.file.read(dir + '/crlf'), expected, 'crlf -> crlf');
+    test.done();
   }
 };
