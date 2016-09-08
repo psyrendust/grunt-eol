@@ -1,7 +1,7 @@
 {
   "name": "grunt-eol",
   "description": "Convert line endings the easy way.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/psyrendust/grunt-eol",
   "author": {
     "name": "Larry Gordon"
