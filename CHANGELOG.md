@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/psyrendust/grunt-eol/compare/v1.0.0...v1.1.0) (2016-09-08)
+
+
+### Features
+
+* **.travis.yml:** migrate to use docker container ([74da1e9](https://github.com/psyrendust/grunt-eol/commit/74da1e9))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/psyrendust/grunt-eol/compare/v0.3.3...v1.0.0) (2016-09-08)
 
