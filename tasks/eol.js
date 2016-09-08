@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
       var eol = getEOL(options.eol);
-      var message = (options.replace) ? 'Creating file ' : 'Replacing file ';
+      var message = (options.replace) ? 'Replacing file ' : 'Creating file ';
       f.src.filter(function(filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
