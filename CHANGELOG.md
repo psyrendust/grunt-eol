@@ -1,3 +1,14 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/psyrendust/grunt-eol/compare/v0.3.3...v1.0.0) (2016-09-08)
+
+
+### Features
+
+* **.travis.yml:** match node support for `grunt-cli@1.x.x` ([40c7709](https://github.com/psyrendust/grunt-eol/commit/40c7709))
+* **package.json:** match node support for `grunt-cli@1.x.x` ([58a02ea](https://github.com/psyrendust/grunt-eol/commit/58a02ea))
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/psyrendust/grunt-eol/compare/v0.3.2...v0.3.3) (2016-09-08)
 
