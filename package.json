@@ -19,7 +19,7 @@
       "url": "https://github.com/psyrendust/grunt-eol/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "Gruntfile.js",
+  "main": "tasks/eol.js",
   "engines": {
     "node": ">= 0.10.0",
     "npm": ">= 2.0.0"
