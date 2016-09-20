@@ -25,7 +25,8 @@
     "npm": ">= 2.0.0"
   },
   "scripts": {
-    "postinstall": "cp node_modules/angular-precommit/index.js .git/hooks/commit-msg",
+    "postinstall": "if [ -z \"$(node ./check-env.js)\" ]; then npm run installhook; fi",
+    "installhook": "if [ -f node_modules/angular-precommit/index.js ] && [ -d .git/hooks ]; then cp node_modules/angular-precommit/index.js .git/hooks/commit-msg; fi",
     "release:patch": "githubrelease -tb patch",
     "release:minor": "githubrelease -tb minor",
     "release:major": "githubrelease -tb major",
