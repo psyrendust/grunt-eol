@@ -2,6 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/grunt-eol.png)](http://badge.fury.io/js/grunt-eol) [![Build Status](https://travis-ci.org/psyrendust/grunt-eol.png?branch=master)](https://travis-ci.org/psyrendust/grunt-eol)
 [![Dependency Status](https://david-dm.org/psyrendust/grunt-eol.svg)](https://david-dm.org/psyrendust/grunt-eol) [![devDependency Status](https://david-dm.org/psyrendust/grunt-eol/dev-status.svg)](https://david-dm.org/psyrendust/grunt-eol#info=devDependencies)
+[![Build status](https://ci.appveyor.com/api/projects/status/tx3ujxg8esviupx1/branch/master?svg=true)](https://ci.appveyor.com/project/psyrendust/grunt-eol/branch/master)
 
 > Convert line endings the easy way.
 
