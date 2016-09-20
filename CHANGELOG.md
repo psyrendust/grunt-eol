@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/psyrendust/grunt-eol/compare/v1.1.1...v1.1.2) (2016-09-20)
+
+
+### Bug Fixes
+
+* **package.json:** run check-env.js to check if postinstall should occur ([727d02f](https://github.com/psyrendust/grunt-eol/commit/727d02f)), closes [#3](https://github.com/psyrendust/grunt-eol/issues/3) [#4](https://github.com/psyrendust/grunt-eol/issues/4)
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/psyrendust/grunt-eol/compare/v1.1.0...v1.1.1) (2016-09-08)
 
