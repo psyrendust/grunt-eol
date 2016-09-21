@@ -1,3 +1,14 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/psyrendust/grunt-eol/compare/v1.1.2...v1.1.3) (2016-09-21)
+
+
+### Bug Fixes
+
+* **package.json:** postinstall fails on windows ([44337c6](https://github.com/psyrendust/grunt-eol/commit/44337c6)), closes [#5](https://github.com/psyrendust/grunt-eol/issues/5)
+* **postinstall.js:** node 0.10 errors ([9d84b46](https://github.com/psyrendust/grunt-eol/commit/9d84b46))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/psyrendust/grunt-eol/compare/v1.1.1...v1.1.2) (2016-09-20)
 
